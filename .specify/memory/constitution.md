@@ -17,6 +17,13 @@ The application is designed for a mobile experience first. This means UIs are to
 ### V. Local-First Data
 Habit data should be stored locally on the device to ensure fast interactions and usability without requiring a constant internet connection.
 
+### VI. Seguridad y privacidad
+- Toda información sensible (contraseñas, tokens, datos de usuario) debe almacenarse cifrada.
+- Las credenciales de bases de datos nunca se suben al repositorio; se usan variables de entorno.
+- Validación y sanitización de entradas del usuario para evitar inyecciones y vulnerabilidades comunes.
+- Las conexiones remotas (API / MySQL) deben usar HTTPS o conexiones seguras.
+- Revisar dependencias externas y librerías por vulnerabilidades antes de incorporarlas.
+
 ## Development Workflow
 
 We follow a streamlined, trunk-based development workflow. All work is done in short-lived feature branches that are merged directly into the main trunk.
